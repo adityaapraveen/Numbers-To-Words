@@ -1,17 +1,21 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-
+    margin: 0;
+    background-color: grey;
 }
 
 .container {
-    margin-top: 20px;
-    padding-top: 20px;
-
+    padding: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type="number"] {
-    width: 200px;
+    width: 150px;
     padding: 5px;
     margin-right: 10px;
 }
@@ -20,16 +24,54 @@ button {
     padding: 5px 10px;
 }
 
+
 #result {
     margin-top: 20px;
     font-weight: bold;
+    color: black;
 }
-.footer-container{
-    text-align: right;
-    padding-left: 20px;
-    padding-top: 280px;
-    padding-right: 30px;
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px 10px;
     font-size: larger;
     font-weight: 500;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: grey;
+    color: black;
+}
+
+.background-vid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+#bgvid {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    /* background-color: black; */
+    color: black;
+}
+
+#result {
+    font-size: x-large;
+    text-align: center;
+}
+
+#label {
+    font-size: x-large;
+    color: black;
 }

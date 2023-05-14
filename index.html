@@ -9,21 +9,28 @@
 </head>
 
 <body>
+    <!-- <div class="background-vid">
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+            <source src="videoplayback.mp4" type="video/mp4">
+        </video>
+    </div> -->
+
     <div class="container">
         <h1>Number to Word Converter</h1>
-        <label for="numberInput">Enter a number:</label>
+        <label for="numberInput" id="label">Enter a number:</label> <br>
         <input type="number" id="numberInput" placeholder="Enter a number" />
+        <br>
         <button onclick="convertToWords()">Convert</button>
+        <br>
         <div id="result"></div>
     </div>
-<br>
+
+    <footer class="footer">
+        <p>Aditya Praveen</p>
+        <p>RV University, Bengaluru</p>
+    </footer>
+
     <script src="index.js"></script>
-    <div class="footer-container">
-        <footer>
-            <p>Aditya Praveen</p>
-            <p>RV University</p>
-        </footer>
-    </div>
 </body>
 
 </html>
